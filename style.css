@@ -1,0 +1,235 @@
+/* Global */
+
+/* Header */
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html    {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body    {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: lightblue;
+}
+
+header .container   {
+    justify-content: space-around;
+    border-bottom: 1px solid orangered;
+    display: flex;
+    width: 100vw;
+    padding: 10px;
+    color: whitesmoke;
+
+}
+
+header  {
+    min-height: 80px;
+    display: flex;
+    align-items: flex-end;
+}
+
+ul  {
+    list-style: none;
+}
+
+.branding span  {
+    color:deeppink;
+}
+
+header  nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header a    {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+}
+
+header  a:hover {
+    font-weight: 800;
+    color: coral;
+    background-color: rgb(245, 153, 229);
+}
+
+/* Showcase heroes */
+
+header .current {
+    background-color: beige;
+    color: cornflowerblue;
+}
+
+.showcase {
+    display: flex;
+    /* justify-content: center; */
+    background-image: url("https://picsum.photos/id/2/1500/500/?blur=4");
+    background-size: cover;
+    height: 400px;
+    /* width: 100%; */
+}
+
+.showcase .container    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100vw;
+}
+
+.showcase h1  {
+    font-size: 7vw;
+    color: whitesmoke;
+}
+
+.showcase p   {
+    color: deeppink;
+    padding-inline: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* subscribe */
+
+.newsletter {
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.newsletter .container  {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    /* width: 100vw; */
+    padding: 15px;
+}
+
+.newsletter h1  {
+    color: chocolate;
+    padding: 10px;
+}
+
+.newsletter button  {
+    background-color: chocolate;
+    border: 0 solid rgba(210, 105, 30, 0);
+    border-radius: 4px;
+    color: whitesmoke;
+    border-width: 10px;
+    width: 100px;
+    font-size: 15px;
+    padding: 4px 8px;
+}
+
+.newsletter input   {
+    border: 0 solid rgba(210, 105, 30, 0);
+    border-radius: 4px;
+    border-width: 10px;
+    width: 300px;
+    font-size: 15px;
+    padding: 4px 8px;
+}
+
+/* Boxes */
+
+.boxes  {
+    display: flex;
+    justify-content: space-between;
+    /* height: 100%; */
+    /* width: 100vw; */
+    margin-top: 20px;
+}
+
+.boxes .container {
+    display: flex;
+    /* flex-direction: row; */
+    /* width: 100vw; */
+    height: max-content;
+    /* margin: 50px auto; */
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.boxes h3, p    {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.boxes img  {
+    height: 120px;
+    justify-content: space-between;
+}
+
+.boxes .box {
+    text-align: center;
+    padding: 12px;
+}
+
+.boxes h3{
+    text-align: center;
+    /* padding: 12px; */
+    justify-content: center;
+}
+
+/* Footer */
+
+footer  {
+    background-color: cornflowerblue;
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+}
+
+
+
+@media (max-width: 800px)   {
+    
+    .container  {
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        margin-bottom: 10px;
+        /* flex-wrap: wrap; */
+    }
+
+    .showcase   {
+        font-size: 20vw;
+    }
+
+    .newsletter .container  {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
